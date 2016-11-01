@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65B87E2C1DC8E5FF002635EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B87E2B1DC8E5FF002635EB /* AppDelegate.swift */; };
+		65B87E331DC8E5FF002635EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B87E321DC8E5FF002635EB /* Assets.xcassets */; };
+		65B87E361DC8E5FF002635EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B87E341DC8E5FF002635EB /* LaunchScreen.storyboard */; };
+		65B87E431DC8E943002635EB /* NetworkKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B87E421DC8E943002635EB /* NetworkKit.swift */; };
+		65B87E481DC8E9F9002635EB /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B87E471DC8E9F9002635EB /* Storyboards.swift */; };
+		65B87E4C1DC8EA2D002635EB /* Controllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B87E4B1DC8EA2D002635EB /* Controllers.swift */; };
+		65B87E4E1DC8EDC6002635EB /* RedditEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B87E4D1DC8EDC6002635EB /* RedditEntry.swift */; };
+		65B87E511DC8F763002635EB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B87E501DC8F763002635EB /* Home.storyboard */; };
+		65B87E561DC8F88F002635EB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B87E551DC8F88F002635EB /* HomeViewController.swift */; };
+		65B87E581DC8F947002635EB /* Entry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B87E571DC8F947002635EB /* Entry.storyboard */; };
+		65B87E5C1DC8FA0C002635EB /* EntryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B87E5B1DC8FA0C002635EB /* EntryTableViewController.swift */; };
+		65B87E5E1DC901EC002635EB /* EntriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B87E5D1DC901EC002635EB /* EntriesTableViewController.swift */; };
+		65B87E621DC902BD002635EB /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B87E611DC902BD002635EB /* Appearance.swift */; };
+		65B87E651DC9150D002635EB /* EntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B87E631DC9150D002635EB /* EntryTableViewCell.swift */; };
+		65B87E661DC9150D002635EB /* EntryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65B87E641DC9150D002635EB /* EntryTableViewCell.xib */; };
+		EB976B7BCB9E0505A3F916EA /* Pods_EtermaxRedditTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98FE6002C5C2B04E9B2CFF1A /* Pods_EtermaxRedditTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		127CE26FE68A0812DDF67A36 /* Pods-EtermaxRedditTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtermaxRedditTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EtermaxRedditTest/Pods-EtermaxRedditTest.debug.xcconfig"; sourceTree = "<group>"; };
+		65B87E281DC8E5FF002635EB /* EtermaxRedditTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EtermaxRedditTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65B87E2B1DC8E5FF002635EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		65B87E321DC8E5FF002635EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65B87E351DC8E5FF002635EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		65B87E371DC8E5FF002635EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65B87E421DC8E943002635EB /* NetworkKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkKit.swift; sourceTree = "<group>"; };
+		65B87E471DC8E9F9002635EB /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		65B87E4B1DC8EA2D002635EB /* Controllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controllers.swift; sourceTree = "<group>"; };
+		65B87E4D1DC8EDC6002635EB /* RedditEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditEntry.swift; sourceTree = "<group>"; };
+		65B87E501DC8F763002635EB /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		65B87E551DC8F88F002635EB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		65B87E571DC8F947002635EB /* Entry.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Entry.storyboard; sourceTree = "<group>"; };
+		65B87E5B1DC8FA0C002635EB /* EntryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryTableViewController.swift; sourceTree = "<group>"; };
+		65B87E5D1DC901EC002635EB /* EntriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntriesTableViewController.swift; sourceTree = "<group>"; };
+		65B87E611DC902BD002635EB /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		65B87E631DC9150D002635EB /* EntryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryTableViewCell.swift; sourceTree = "<group>"; };
+		65B87E641DC9150D002635EB /* EntryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntryTableViewCell.xib; sourceTree = "<group>"; };
+		98FE6002C5C2B04E9B2CFF1A /* Pods_EtermaxRedditTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EtermaxRedditTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7E90F2E6B6AFFDD43DE1F96 /* Pods-EtermaxRedditTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtermaxRedditTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-EtermaxRedditTest/Pods-EtermaxRedditTest.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65B87E251DC8E5FD002635EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB976B7BCB9E0505A3F916EA /* Pods_EtermaxRedditTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4137AA40BEB70C17C53A9669 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98FE6002C5C2B04E9B2CFF1A /* Pods_EtermaxRedditTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65B87E1F1DC8E5FD002635EB = {
+			isa = PBXGroup;
+			children = (
+				65B87E2A1DC8E5FF002635EB /* EtermaxRedditTest */,
+				65B87E291DC8E5FF002635EB /* Products */,
+				7091D0E3CD379EE43D29F501 /* Pods */,
+				4137AA40BEB70C17C53A9669 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		65B87E291DC8E5FF002635EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65B87E281DC8E5FF002635EB /* EtermaxRedditTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65B87E2A1DC8E5FF002635EB /* EtermaxRedditTest */ = {
+			isa = PBXGroup;
+			children = (
+				65B87E3D1DC8E8B8002635EB /* Source */,
+				65B87E2B1DC8E5FF002635EB /* AppDelegate.swift */,
+				65B87E321DC8E5FF002635EB /* Assets.xcassets */,
+				65B87E371DC8E5FF002635EB /* Info.plist */,
+			);
+			path = EtermaxRedditTest;
+			sourceTree = "<group>";
+		};
+		65B87E3D1DC8E8B8002635EB /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				65B87E3E1DC8E8C8002635EB /* Other */,
+				65B87E3F1DC8E8EE002635EB /* Model */,
+				65B87E401DC8E8FE002635EB /* View */,
+				65B87E411DC8E90E002635EB /* Controller */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		65B87E3E1DC8E8C8002635EB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				65B87E5F1DC90287002635EB /* Appearance */,
+				65B87E421DC8E943002635EB /* NetworkKit.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		65B87E3F1DC8E8EE002635EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				65B87E4D1DC8EDC6002635EB /* RedditEntry.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		65B87E401DC8E8FE002635EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				65B87E441DC8E960002635EB /* Storyboards */,
+				65B87E341DC8E5FF002635EB /* LaunchScreen.storyboard */,
+				65B87E451DC8E977002635EB /* XIBs and Custom Views */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		65B87E411DC8E90E002635EB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				65B87E531DC8F7B6002635EB /* Home */,
+				65B87E541DC8F7FA002635EB /* Entry */,
+				65B87E4A1DC8EA21002635EB /* Other */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		65B87E441DC8E960002635EB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				65B87E4F1DC8F744002635EB /* Home */,
+				65B87E521DC8F7A8002635EB /* Entry */,
+				65B87E461DC8E9E3002635EB /* Other */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		65B87E451DC8E977002635EB /* XIBs and Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				65B87E491DC8EA07002635EB /* Cells */,
+			);
+			path = "XIBs and Custom Views";
+			sourceTree = "<group>";
+		};
+		65B87E461DC8E9E3002635EB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				65B87E471DC8E9F9002635EB /* Storyboards.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		65B87E491DC8EA07002635EB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				65B87E631DC9150D002635EB /* EntryTableViewCell.swift */,
+				65B87E641DC9150D002635EB /* EntryTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		65B87E4A1DC8EA21002635EB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				65B87E4B1DC8EA2D002635EB /* Controllers.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		65B87E4F1DC8F744002635EB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				65B87E501DC8F763002635EB /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		65B87E521DC8F7A8002635EB /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				65B87E571DC8F947002635EB /* Entry.storyboard */,
+			);
+			path = Entry;
+			sourceTree = "<group>";
+		};
+		65B87E531DC8F7B6002635EB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				65B87E551DC8F88F002635EB /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		65B87E541DC8F7FA002635EB /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				65B87E5D1DC901EC002635EB /* EntriesTableViewController.swift */,
+				65B87E5B1DC8FA0C002635EB /* EntryTableViewController.swift */,
+			);
+			path = Entry;
+			sourceTree = "<group>";
+		};
+		65B87E5F1DC90287002635EB /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				65B87E611DC902BD002635EB /* Appearance.swift */,
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
+		7091D0E3CD379EE43D29F501 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				127CE26FE68A0812DDF67A36 /* Pods-EtermaxRedditTest.debug.xcconfig */,
+				E7E90F2E6B6AFFDD43DE1F96 /* Pods-EtermaxRedditTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65B87E271DC8E5FD002635EB /* EtermaxRedditTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65B87E3A1DC8E5FF002635EB /* Build configuration list for PBXNativeTarget "EtermaxRedditTest" */;
+			buildPhases = (
+				05794A7FEC2FDC73BDAE4691 /* [CP] Check Pods Manifest.lock */,
+				65B87E241DC8E5FD002635EB /* Sources */,
+				65B87E251DC8E5FD002635EB /* Frameworks */,
+				65B87E261DC8E5FD002635EB /* Resources */,
+				FC1349F70E332FAAC6CDBD8F /* [CP] Embed Pods Frameworks */,
+				13F6012C67F90A72A9318EA8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EtermaxRedditTest;
+			productName = EtermaxRedditTest;
+			productReference = 65B87E281DC8E5FF002635EB /* EtermaxRedditTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65B87E201DC8E5FD002635EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "José Valderrama";
+				TargetAttributes = {
+					65B87E271DC8E5FD002635EB = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 65B87E231DC8E5FD002635EB /* Build configuration list for PBXProject "EtermaxRedditTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65B87E1F1DC8E5FD002635EB;
+			productRefGroup = 65B87E291DC8E5FF002635EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65B87E271DC8E5FD002635EB /* EtermaxRedditTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65B87E261DC8E5FD002635EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65B87E511DC8F763002635EB /* Home.storyboard in Resources */,
+				65B87E581DC8F947002635EB /* Entry.storyboard in Resources */,
+				65B87E661DC9150D002635EB /* EntryTableViewCell.xib in Resources */,
+				65B87E361DC8E5FF002635EB /* LaunchScreen.storyboard in Resources */,
+				65B87E331DC8E5FF002635EB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05794A7FEC2FDC73BDAE4691 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		13F6012C67F90A72A9318EA8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EtermaxRedditTest/Pods-EtermaxRedditTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC1349F70E332FAAC6CDBD8F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EtermaxRedditTest/Pods-EtermaxRedditTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65B87E241DC8E5FD002635EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65B87E5E1DC901EC002635EB /* EntriesTableViewController.swift in Sources */,
+				65B87E621DC902BD002635EB /* Appearance.swift in Sources */,
+				65B87E481DC8E9F9002635EB /* Storyboards.swift in Sources */,
+				65B87E4E1DC8EDC6002635EB /* RedditEntry.swift in Sources */,
+				65B87E5C1DC8FA0C002635EB /* EntryTableViewController.swift in Sources */,
+				65B87E4C1DC8EA2D002635EB /* Controllers.swift in Sources */,
+				65B87E651DC9150D002635EB /* EntryTableViewCell.swift in Sources */,
+				65B87E2C1DC8E5FF002635EB /* AppDelegate.swift in Sources */,
+				65B87E431DC8E943002635EB /* NetworkKit.swift in Sources */,
+				65B87E561DC8F88F002635EB /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		65B87E341DC8E5FF002635EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65B87E351DC8E5FF002635EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65B87E381DC8E5FF002635EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65B87E391DC8E5FF002635EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65B87E3B1DC8E5FF002635EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 127CE26FE68A0812DDF67A36 /* Pods-EtermaxRedditTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EtermaxRedditTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JoseValderrama.EtermaxRedditTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		65B87E3C1DC8E5FF002635EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7E90F2E6B6AFFDD43DE1F96 /* Pods-EtermaxRedditTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EtermaxRedditTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JoseValderrama.EtermaxRedditTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65B87E231DC8E5FD002635EB /* Build configuration list for PBXProject "EtermaxRedditTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65B87E381DC8E5FF002635EB /* Debug */,
+				65B87E391DC8E5FF002635EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65B87E3A1DC8E5FF002635EB /* Build configuration list for PBXNativeTarget "EtermaxRedditTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65B87E3B1DC8E5FF002635EB /* Debug */,
+				65B87E3C1DC8E5FF002635EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65B87E201DC8E5FD002635EB /* Project object */;
+}

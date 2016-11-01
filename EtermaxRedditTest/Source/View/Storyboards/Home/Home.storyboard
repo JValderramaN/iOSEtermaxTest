@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="u7b-jt-7Vq">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="NCm-2l-ohh">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="2wS-Bi-fsr" customClass="HomeViewController" customModule="EtermaxRedditTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QoA-2J-QLK"/>
+                        <viewControllerLayoutGuide type="bottom" id="nzT-ie-Gyb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hzU-vJ-G9I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redditIcon" translatesAutoresizingMaskIntoConstraints="NO" id="zzZ-aI-d7I">
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="240" id="8aJ-1K-m0c"/>
+                                    <constraint firstAttribute="width" secondItem="zzZ-aI-d7I" secondAttribute="height" multiplier="4:3" constant="79" id="RQC-IP-VgY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aax-0D-yDp">
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sou-OA-a4b">
+                                <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" title="Start!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startButtonTapped:" destination="2wS-Bi-fsr" eventType="touchUpInside" id="SgN-QA-B4M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zzZ-aI-d7I" firstAttribute="centerX" secondItem="hzU-vJ-G9I" secondAttribute="centerX" id="EQN-ZO-tNU"/>
+                            <constraint firstItem="sou-OA-a4b" firstAttribute="centerX" secondItem="zzZ-aI-d7I" secondAttribute="centerX" id="HZ4-SW-XBS"/>
+                            <constraint firstItem="zzZ-aI-d7I" firstAttribute="centerY" secondItem="hzU-vJ-G9I" secondAttribute="centerY" constant="-60" id="f5R-fR-VNF"/>
+                            <constraint firstItem="aax-0D-yDp" firstAttribute="centerX" secondItem="hzU-vJ-G9I" secondAttribute="centerX" id="njG-Q5-9ko"/>
+                            <constraint firstItem="sou-OA-a4b" firstAttribute="top" secondItem="zzZ-aI-d7I" secondAttribute="bottom" constant="87" id="oIx-M2-aUY"/>
+                            <constraint firstAttribute="bottom" secondItem="aax-0D-yDp" secondAttribute="bottom" constant="40" id="vUO-bD-pz1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2Cw-gW-70C"/>
+                    <connections>
+                        <outlet property="startButton" destination="sou-OA-a4b" id="lRh-ua-MWw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NMo-2c-w0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="948" y="-11.244377811094454"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eQX-fV-2fR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="u7b-jt-7Vq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ypG-7e-fR0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2wS-Bi-fsr" kind="relationship" relationship="rootViewController" id="BDN-LS-sxm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LJe-Rg-MMz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8.8000000000000007" y="-11.244377811094454"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="redditIcon" width="256" height="256"/>
+    </resources>
+</document>
