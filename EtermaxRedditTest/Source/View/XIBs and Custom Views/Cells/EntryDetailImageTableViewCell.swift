@@ -10,11 +10,8 @@ import UIKit
 import Kingfisher
 
 class EntryDetailImageTableViewCell: UITableViewCell {
-    @IBOutlet weak var imageview: UIImageView!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
+    @IBOutlet weak var imageview: UIImageView!
     
     func setData(_ imageURL : String?){
         if let imageURL = imageURL, !imageURL.isEmpty{

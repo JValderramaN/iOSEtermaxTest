@@ -13,8 +13,10 @@ import AlamofireObjectMapper
 import RealmSwift
 import SystemConfiguration
 
+/// Network Resposability
 class NetworkKit {
     
+    /// Fetchs data for given <T> type conforming with protocols
     static func fetchData <T: Object> (type: T.Type, success:@escaping () -> Void, fail:@escaping (_ error:NSError)->Void)->Void where T:Mappable, T:Meta {
         Alamofire.request(type.url())
             .responseJSON { response in
@@ -48,6 +50,7 @@ class NetworkKit {
         }
     }
     
+    /// Checks whether Internet connection
     static func isConnectedToNetwork() -> Bool {
         
         var zeroAddress = sockaddr_in(sin_len: 0, sin_family: 0, sin_port: 0, sin_addr: in_addr(s_addr: 0), sin_zero: (0, 0, 0, 0, 0, 0, 0, 0))

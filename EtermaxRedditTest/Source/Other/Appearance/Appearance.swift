@@ -2,13 +2,13 @@
 //  Appearance.swift
 //  EtermaxRedditTest
 //
-//  Created by Momentum Lab 4 on 11/1/16.
+//  Created by José Valderrama on 11/1/16.
 //  Copyright © 2016 José Valderrama. All rights reserved.
 //
 
 import UIKit
 
-/// Use this to instantiate any controllers programatically.
+/// Cointains some default colors.
 struct Color {
     
     private init() {}

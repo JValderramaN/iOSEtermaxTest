@@ -25,6 +25,8 @@ class HomeViewController: UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
+    // MARK: - Animations
+    
     func startButtonAnimation1(){
         self.startButton.transform = CGAffineTransform(scaleX: 0, y: 0)
         
@@ -46,6 +48,8 @@ class HomeViewController: UIViewController {
             }
         }
     }
+    
+    // MARK: - Start Section
     
     func saveDataIntoRealm(){
         let internetConnetion = NetworkKit.isConnectedToNetwork()
