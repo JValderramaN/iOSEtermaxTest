@@ -23,6 +23,8 @@ class EntryDetailTableViewController: UITableViewController {
         self.tableView.estimatedRowHeight = 150
         self.tableView.register(UINib(nibName: detailCellIdentifier, bundle: nil), forCellReuseIdentifier: detailCellIdentifier)
         self.tableView.register(UINib(nibName: imageCellIdentifier, bundle: nil), forCellReuseIdentifier: imageCellIdentifier)
+        
+        navigationItem.title = "Entry Detail"
     }
     
     // MARK: - Table view data source

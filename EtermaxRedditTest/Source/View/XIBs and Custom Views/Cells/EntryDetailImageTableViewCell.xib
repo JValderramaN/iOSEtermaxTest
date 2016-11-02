@@ -17,6 +17,18 @@
                 <frame key="frameInset" width="406" height="171"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OfY-Wb-I7U" userLabel="gray layer view">
+                        <color key="backgroundColor" red="0.33333333329999998" green="0.37254901959999998" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uuu-EV-Hpe" userLabel="white layer view">
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12.5"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redditNoImage" translatesAutoresizingMaskIntoConstraints="NO" id="OfZ-dL-ZJk">
                         <constraints>
                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="120" id="G3I-J4-yBz"/>
@@ -29,9 +41,17 @@
                     </imageView>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="Uuu-EV-Hpe" firstAttribute="width" secondItem="OfZ-dL-ZJk" secondAttribute="width" constant="4" id="5hS-nM-bpN"/>
+                    <constraint firstItem="Uuu-EV-Hpe" firstAttribute="centerX" secondItem="OfZ-dL-ZJk" secondAttribute="centerX" id="8w8-3Q-RLT"/>
                     <constraint firstItem="OfZ-dL-ZJk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="20" id="C9N-tO-8ux"/>
+                    <constraint firstItem="OfY-Wb-I7U" firstAttribute="width" secondItem="Uuu-EV-Hpe" secondAttribute="width" constant="4" id="D3Q-Lo-WWQ"/>
                     <constraint firstItem="OfZ-dL-ZJk" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="FI2-5Y-TIw"/>
+                    <constraint firstItem="OfY-Wb-I7U" firstAttribute="centerX" secondItem="Uuu-EV-Hpe" secondAttribute="centerX" id="FwV-BG-SvZ"/>
+                    <constraint firstItem="Uuu-EV-Hpe" firstAttribute="height" secondItem="OfZ-dL-ZJk" secondAttribute="height" constant="4" id="KkU-ab-dp6"/>
                     <constraint firstAttribute="bottomMargin" secondItem="OfZ-dL-ZJk" secondAttribute="bottom" constant="20" id="mFb-hY-mLI"/>
+                    <constraint firstItem="Uuu-EV-Hpe" firstAttribute="centerY" secondItem="OfZ-dL-ZJk" secondAttribute="centerY" id="mSw-ue-nn8"/>
+                    <constraint firstItem="OfY-Wb-I7U" firstAttribute="centerY" secondItem="Uuu-EV-Hpe" secondAttribute="centerY" id="ufK-Tn-fKu"/>
+                    <constraint firstItem="OfY-Wb-I7U" firstAttribute="height" secondItem="Uuu-EV-Hpe" secondAttribute="height" constant="4" id="ylu-kb-f33"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" red="0.60784313729999995" green="0.68627450980000004" blue="0.76470588240000004" alpha="0.5" colorSpace="calibratedRGB"/>

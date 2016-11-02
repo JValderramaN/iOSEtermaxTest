@@ -14,7 +14,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     
     var canStart = false
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         saveDataIntoRealm()
@@ -23,6 +23,28 @@ class HomeViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    func startButtonAnimation1(){
+        self.startButton.transform = CGAffineTransform(scaleX: 0, y: 0)
+        
+        UIView.animate(withDuration: 2, animations: {
+            self.startButton.transform = CGAffineTransform(scaleX: 1, y: 1)
+        }) { (finish) in
+            self.startButtonAnimation2()
+        }
+    }
+    
+    func startButtonAnimation2(){
+        UIView.animate(withDuration: 2, delay: 0, options: .allowUserInteraction, animations: {
+            self.startButton.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+        }) { (finish) in
+            UIView.animate(withDuration: 2, delay: 0, options: .allowUserInteraction, animations: {
+                self.startButton.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+            }) { finish in
+                self.startButtonAnimation2()
+            }
+        }
     }
     
     func saveDataIntoRealm(){
@@ -52,6 +74,7 @@ class HomeViewController: UIViewController {
         }else{
             NetworkKit.fetchData(type: RedditEntry.self, success: {
                 self.startButton.backgroundColor = Color.blueColor
+                self.startButtonAnimation2()
                 self.canStart = true
             }) { (error) in
                 print("error \(error.localizedDescription)")

@@ -22,6 +22,8 @@ class EntriesTableViewController: UITableViewController {
         self.tableView.register(UINib(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
         
         entries = loadEntries()
+        
+        navigationItem.title = "All Entries"
     }
 
     override func viewWillAppear(_ animated: Bool) {

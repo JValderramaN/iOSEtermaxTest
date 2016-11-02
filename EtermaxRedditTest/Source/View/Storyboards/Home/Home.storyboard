@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--Home-->
         <scene sceneID="NCm-2l-ohh">
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="2wS-Bi-fsr" customClass="HomeViewController" customModule="EtermaxRedditTest" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,10 +32,12 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sou-OA-a4b">
                                 <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="20"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <size key="titleShadowOffset" width="-1" height="2"/>
                                 <state key="normal" title="Start!">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="1" green="0.27058823529411763" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
@@ -57,7 +59,7 @@
                             <constraint firstAttribute="bottom" secondItem="aax-0D-yDp" secondAttribute="bottom" constant="40" id="vUO-bD-pz1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="2Cw-gW-70C"/>
+                    <navigationItem key="navigationItem" title="Home" id="2Cw-gW-70C"/>
                     <connections>
                         <outlet property="startButton" destination="sou-OA-a4b" id="lRh-ua-MWw"/>
                     </connections>
