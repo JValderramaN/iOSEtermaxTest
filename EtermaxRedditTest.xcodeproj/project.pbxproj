@@ -22,6 +22,7 @@
 		65B87E621DC902BD002635EB /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B87E611DC902BD002635EB /* Appearance.swift */; };
 		65B87E651DC9150D002635EB /* EntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B87E631DC9150D002635EB /* EntryTableViewCell.swift */; };
 		65B87E661DC9150D002635EB /* EntryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65B87E641DC9150D002635EB /* EntryTableViewCell.xib */; };
+		65D7B4E11DCA23F600D427D7 /* InsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D7B4E01DCA23F600D427D7 /* InsetLabel.swift */; };
 		AB140D7A1DC9629000C2CE35 /* EntryDetailInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB140D781DC9629000C2CE35 /* EntryDetailInfoTableViewCell.swift */; };
 		AB140D7B1DC9629000C2CE35 /* EntryDetailInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB140D791DC9629000C2CE35 /* EntryDetailInfoTableViewCell.xib */; };
 		AB140D7E1DC9650F00C2CE35 /* EntryDetailImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB140D7C1DC9650F00C2CE35 /* EntryDetailImageTableViewCell.swift */; };
@@ -48,6 +49,7 @@
 		65B87E611DC902BD002635EB /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
 		65B87E631DC9150D002635EB /* EntryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryTableViewCell.swift; sourceTree = "<group>"; };
 		65B87E641DC9150D002635EB /* EntryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntryTableViewCell.xib; sourceTree = "<group>"; };
+		65D7B4E01DCA23F600D427D7 /* InsetLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetLabel.swift; sourceTree = "<group>"; };
 		98FE6002C5C2B04E9B2CFF1A /* Pods_EtermaxRedditTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EtermaxRedditTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB140D781DC9629000C2CE35 /* EntryDetailInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryDetailInfoTableViewCell.swift; sourceTree = "<group>"; };
 		AB140D791DC9629000C2CE35 /* EntryDetailInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntryDetailInfoTableViewCell.xib; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			children = (
 				65B87E5F1DC90287002635EB /* Appearance */,
 				65B87E421DC8E943002635EB /* NetworkKit.swift */,
+				65D7B4E01DCA23F600D427D7 /* InsetLabel.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				65B87E4C1DC8EA2D002635EB /* Controllers.swift in Sources */,
 				AB140D7A1DC9629000C2CE35 /* EntryDetailInfoTableViewCell.swift in Sources */,
 				65B87E651DC9150D002635EB /* EntryTableViewCell.swift in Sources */,
+				65D7B4E11DCA23F600D427D7 /* InsetLabel.swift in Sources */,
 				65B87E2C1DC8E5FF002635EB /* AppDelegate.swift in Sources */,
 				65B87E431DC8E943002635EB /* NetworkKit.swift in Sources */,
 				65B87E561DC8F88F002635EB /* HomeViewController.swift in Sources */,
