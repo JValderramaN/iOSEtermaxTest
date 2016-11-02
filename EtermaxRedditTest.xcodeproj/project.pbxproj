@@ -22,6 +22,10 @@
 		65B87E621DC902BD002635EB /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B87E611DC902BD002635EB /* Appearance.swift */; };
 		65B87E651DC9150D002635EB /* EntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B87E631DC9150D002635EB /* EntryTableViewCell.swift */; };
 		65B87E661DC9150D002635EB /* EntryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65B87E641DC9150D002635EB /* EntryTableViewCell.xib */; };
+		AB140D7A1DC9629000C2CE35 /* EntryDetailInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB140D781DC9629000C2CE35 /* EntryDetailInfoTableViewCell.swift */; };
+		AB140D7B1DC9629000C2CE35 /* EntryDetailInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB140D791DC9629000C2CE35 /* EntryDetailInfoTableViewCell.xib */; };
+		AB140D7E1DC9650F00C2CE35 /* EntryDetailImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB140D7C1DC9650F00C2CE35 /* EntryDetailImageTableViewCell.swift */; };
+		AB140D7F1DC9650F00C2CE35 /* EntryDetailImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB140D7D1DC9650F00C2CE35 /* EntryDetailImageTableViewCell.xib */; };
 		EB976B7BCB9E0505A3F916EA /* Pods_EtermaxRedditTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98FE6002C5C2B04E9B2CFF1A /* Pods_EtermaxRedditTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +49,10 @@
 		65B87E631DC9150D002635EB /* EntryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryTableViewCell.swift; sourceTree = "<group>"; };
 		65B87E641DC9150D002635EB /* EntryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntryTableViewCell.xib; sourceTree = "<group>"; };
 		98FE6002C5C2B04E9B2CFF1A /* Pods_EtermaxRedditTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EtermaxRedditTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB140D781DC9629000C2CE35 /* EntryDetailInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryDetailInfoTableViewCell.swift; sourceTree = "<group>"; };
+		AB140D791DC9629000C2CE35 /* EntryDetailInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntryDetailInfoTableViewCell.xib; sourceTree = "<group>"; };
+		AB140D7C1DC9650F00C2CE35 /* EntryDetailImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryDetailImageTableViewCell.swift; sourceTree = "<group>"; };
+		AB140D7D1DC9650F00C2CE35 /* EntryDetailImageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntryDetailImageTableViewCell.xib; sourceTree = "<group>"; };
 		E7E90F2E6B6AFFDD43DE1F96 /* Pods-EtermaxRedditTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtermaxRedditTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-EtermaxRedditTest/Pods-EtermaxRedditTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,7 +137,6 @@
 			isa = PBXGroup;
 			children = (
 				65B87E441DC8E960002635EB /* Storyboards */,
-				65B87E341DC8E5FF002635EB /* LaunchScreen.storyboard */,
 				65B87E451DC8E977002635EB /* XIBs and Custom Views */,
 			);
 			path = View;
@@ -148,6 +155,7 @@
 		65B87E441DC8E960002635EB /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				65B87E341DC8E5FF002635EB /* LaunchScreen.storyboard */,
 				65B87E4F1DC8F744002635EB /* Home */,
 				65B87E521DC8F7A8002635EB /* Entry */,
 				65B87E461DC8E9E3002635EB /* Other */,
@@ -176,6 +184,10 @@
 			children = (
 				65B87E631DC9150D002635EB /* EntryTableViewCell.swift */,
 				65B87E641DC9150D002635EB /* EntryTableViewCell.xib */,
+				AB140D781DC9629000C2CE35 /* EntryDetailInfoTableViewCell.swift */,
+				AB140D791DC9629000C2CE35 /* EntryDetailInfoTableViewCell.xib */,
+				AB140D7C1DC9650F00C2CE35 /* EntryDetailImageTableViewCell.swift */,
+				AB140D7D1DC9650F00C2CE35 /* EntryDetailImageTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -302,7 +314,9 @@
 			files = (
 				65B87E511DC8F763002635EB /* Home.storyboard in Resources */,
 				65B87E581DC8F947002635EB /* Entry.storyboard in Resources */,
+				AB140D7B1DC9629000C2CE35 /* EntryDetailInfoTableViewCell.xib in Resources */,
 				65B87E661DC9150D002635EB /* EntryTableViewCell.xib in Resources */,
+				AB140D7F1DC9650F00C2CE35 /* EntryDetailImageTableViewCell.xib in Resources */,
 				65B87E361DC8E5FF002635EB /* LaunchScreen.storyboard in Resources */,
 				65B87E331DC8E5FF002635EB /* Assets.xcassets in Resources */,
 			);
@@ -364,11 +378,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				65B87E5E1DC901EC002635EB /* EntriesTableViewController.swift in Sources */,
+				AB140D7E1DC9650F00C2CE35 /* EntryDetailImageTableViewCell.swift in Sources */,
 				65B87E621DC902BD002635EB /* Appearance.swift in Sources */,
 				65B87E481DC8E9F9002635EB /* Storyboards.swift in Sources */,
 				65B87E4E1DC8EDC6002635EB /* RedditEntry.swift in Sources */,
 				65B87E5C1DC8FA0C002635EB /* EntryTableViewController.swift in Sources */,
 				65B87E4C1DC8EA2D002635EB /* Controllers.swift in Sources */,
+				AB140D7A1DC9629000C2CE35 /* EntryDetailInfoTableViewCell.swift in Sources */,
 				65B87E651DC9150D002635EB /* EntryTableViewCell.swift in Sources */,
 				65B87E2C1DC8E5FF002635EB /* AppDelegate.swift in Sources */,
 				65B87E431DC8E943002635EB /* NetworkKit.swift in Sources */,
@@ -385,7 +401,7 @@
 				65B87E351DC8E5FF002635EB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			path = ../..;
+			path = ../../..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

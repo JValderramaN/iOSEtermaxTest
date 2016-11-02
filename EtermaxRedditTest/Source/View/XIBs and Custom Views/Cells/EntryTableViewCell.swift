@@ -14,8 +14,12 @@ class EntryTableViewCell: UITableViewCell {
     @IBOutlet weak var thumbnailImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     
-    func loadData(entry : RedditEntry){
-        thumbnailImageView.kf.setImage(with: URL(string: entry.thumbnail))
+    func setData(entry : RedditEntry){
+        if !entry.thumbnail.isEmpty{
+            thumbnailImageView.kf.setImage(with: URL(string: entry.thumbnail))
+        }else{
+            thumbnailImageView.image = UIImage(named: "redditNoImage")
+        }
         titleLabel.text = entry.title
     }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="u7b-jt-7Vq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="u7b-jt-7Vq">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -15,14 +15,14 @@
                         <viewControllerLayoutGuide type="top" id="QoA-2J-QLK"/>
                         <viewControllerLayoutGuide type="bottom" id="nzT-ie-Gyb"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="hzU-vJ-G9I">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="hzU-vJ-G9I">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redditIcon" translatesAutoresizingMaskIntoConstraints="NO" id="zzZ-aI-d7I">
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="240" id="8aJ-1K-m0c"/>
-                                    <constraint firstAttribute="width" secondItem="zzZ-aI-d7I" secondAttribute="height" multiplier="4:3" constant="79" id="RQC-IP-VgY"/>
+                                    <constraint firstAttribute="width" secondItem="zzZ-aI-d7I" secondAttribute="height" multiplier="4:3" constant="30" id="RQC-IP-VgY"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aax-0D-yDp">
@@ -31,7 +31,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sou-OA-a4b">
-                                <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                 <state key="normal" title="Start!">
@@ -45,13 +45,15 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.60784313729999995" green="0.68627450980000004" blue="0.76470588240000004" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.60784313729999995" green="0.68627450980000004" blue="0.76470588240000004" alpha="0.5" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="zzZ-aI-d7I" firstAttribute="centerX" secondItem="hzU-vJ-G9I" secondAttribute="centerX" id="EQN-ZO-tNU"/>
                             <constraint firstItem="sou-OA-a4b" firstAttribute="centerX" secondItem="zzZ-aI-d7I" secondAttribute="centerX" id="HZ4-SW-XBS"/>
-                            <constraint firstItem="zzZ-aI-d7I" firstAttribute="centerY" secondItem="hzU-vJ-G9I" secondAttribute="centerY" constant="-60" id="f5R-fR-VNF"/>
+                            <constraint firstItem="aax-0D-yDp" firstAttribute="top" relation="greaterThanOrEqual" secondItem="sou-OA-a4b" secondAttribute="bottom" constant="10" id="MDX-4v-zft"/>
+                            <constraint firstItem="zzZ-aI-d7I" firstAttribute="centerY" secondItem="hzU-vJ-G9I" secondAttribute="centerY" constant="-50" id="f5R-fR-VNF"/>
                             <constraint firstItem="aax-0D-yDp" firstAttribute="centerX" secondItem="hzU-vJ-G9I" secondAttribute="centerX" id="njG-Q5-9ko"/>
-                            <constraint firstItem="sou-OA-a4b" firstAttribute="top" secondItem="zzZ-aI-d7I" secondAttribute="bottom" constant="87" id="oIx-M2-aUY"/>
+                            <constraint firstItem="sou-OA-a4b" firstAttribute="top" secondItem="zzZ-aI-d7I" secondAttribute="bottom" priority="750" constant="40" id="tcf-ed-ke9"/>
                             <constraint firstAttribute="bottom" secondItem="aax-0D-yDp" secondAttribute="bottom" constant="40" id="vUO-bD-pz1"/>
                         </constraints>
                     </view>

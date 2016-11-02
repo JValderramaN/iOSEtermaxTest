@@ -67,7 +67,7 @@ class HomeViewController: UIViewController {
     }
     
     func start(){
-        self.navigationController?.pushViewController(Controllers.instantiateHomeViewController(), animated: true)
+        self.navigationController?.pushViewController(Controllers.instantiateEntriesTableViewController(), animated: true)
     }
     
     @IBAction func startButtonTapped(_ sender: UIButton) {
@@ -76,6 +76,5 @@ class HomeViewController: UIViewController {
         }else{
             saveDataIntoRealm()
         }
-
     }
 }

@@ -9,18 +9,17 @@
 import UIKit
 import RealmSwift
 
-let cellIdentifier = "EntryTableViewCell"
-
 class EntriesTableViewController: UITableViewController {
     
+    let cellIdentifier = "EntryTableViewCell"
     var entries : Results<RedditEntry>?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.tableView.rowHeight = UITableViewAutomaticDimension
-        self.tableView.estimatedRowHeight = 100
-        self.tableView.register(UINib(nibName: "EntryTableViewCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
+        self.tableView.estimatedRowHeight = 150
+        self.tableView.register(UINib(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
         
         entries = loadEntries()
     }
@@ -48,8 +47,16 @@ class EntriesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! EntryTableViewCell
 
-        cell.loadData(entry: entries![indexPath.row])
+        cell.setData(entry: entries![indexPath.row])
 
         return cell
+    }
+    
+    // MARK: - UITableViewDelegate
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let entryDetail = Controllers.instantiateEntryDetailTableViewController()
+        entryDetail.entry = entries![indexPath.row]
+        self.navigationController?.pushViewController(entryDetail, animated: true)
     }
 }

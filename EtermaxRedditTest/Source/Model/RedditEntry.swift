@@ -22,7 +22,9 @@ class RedditEntry: Object {
     dynamic var created_utc : Date? = nil
     dynamic var thumbnail : String = ""
     dynamic var num_comments : Int = 0
-    dynamic var subreddit_id : String = ""
+    dynamic var subreddit : String = ""
+    dynamic var link : String = ""
+    
     
     override static func primaryKey() -> String? {
         return "id"
@@ -50,7 +52,8 @@ extension RedditEntry : Mappable{
         }
         
         num_comments <- map["data.num_comments"]
-        subreddit_id <- map["data.subreddit_id"]
+        subreddit <- map["data.subreddit"]
+        link <- map["data.url"]
     }
 }
 

@@ -13,5 +13,5 @@ struct Color {
     
     private init() {}
     
-    static let blueColor = UIColor(red: 235/255, green: 53/255, blue: 62/255, alpha: 1)
+    static let blueColor = UIColor(red: 155/255, green: 175/255, blue: 195/255, alpha: 1)
 }
